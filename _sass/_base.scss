@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&display=swap");
 
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 body {
-  font: 400 16px 'Roboto Slab',AppleSDGothicNeo,sans-serif;
+  font: 400 16px "Roboto Slab", AppleSDGothicNeo, sans-serif;
   color: rgba(0, 0, 0, 0.84);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -20,129 +21,157 @@ body {
   flex-direction: column;
 }
 
-body, th, td, div, p, li {
-    word-break: keep-all;
+body,
+th,
+td,
+div,
+p,
+li {
+  word-break: keep-all;
 }
 
-$main-font-color: #4D5667;
+$main-font-color: #292d36;
 
-p, li {
-    color: $main-font-color;
+p,
+li {
+  color: $main-font-color;
 }
 
 a:link {
 }
 a:visited {
-    color: #344B83;
+  color: #344b83;
 }
 
 .post-content {
-    line-height: 2;
+  line-height: 2;
 }
 
 blockquote {
-    font-family: 'Noto Serif KR', serif;
-    background: #FFFFFF;
-    margin:0;
-    padding: 1px 0px 1px 8px;
-    border-left: 4px solid #CCCCCC;
-    p {
-        line-height: 2;
-        color: $second-font-color;
-    }
+  font-family: "Noto Serif KR", serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 1px 0px 1px 8px;
+  border-left: 4px solid #cccccc;
+  p {
+    line-height: 2;
+    color: $second-font-color;
+  }
 }
-code,pre {
-    font-family:  $coding-font;
+code,
+pre {
+  font-family: $coding-font;
 }
 code {
-    color: inherit;
-    background-color: #ebedf0;
-    padding: 1px 3px;
-    border-radius: 3px;
+  color: inherit;
+  background-color: #ebedf0;
+  padding: 1px 3px;
+  border-radius: 3px;
 }
 pre {
-    overflow-x: auto;
-    padding: 10px 10px;
+  overflow-x: auto;
+  padding: 10px 10px;
 }
-pre, pre code {
-    color: #fafafa;
-    background-color: #223;
-    // font-weight: 600;
+pre,
+pre code {
+  color: #fafafa;
+  background-color: #223;
+  // font-weight: 600;
 }
 pre code {
-    padding: 0;
+  padding: 0;
 }
 .hide {
-    display: none;
+  display: none;
 }
 .center {
-    text-align: center;
+  text-align: center;
 }
 .language-html table {
-    background: transparent;
-    margin: 0;
+  background: transparent;
+  margin: 0;
 }
 .language-html td {
-    padding: 0;
-    border: 0;
-
+  padding: 0;
+  border: 0;
 }
 
 h1 {
-    font-weight: normal;
+  font-weight: normal;
 }
-h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    color: $main-font-color;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: $main-font-color;
 }
 
-.post-content h1,h2,h3,h4,h5,h6 {
-    &:before { color:$theme-color; }
+.post-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:before {
+    color: $theme-color;
+  }
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 0px;
+  font-size: 2.2rem;
+  margin: 0px;
 }
 .post-content h1 {
-    border-bottom: 1px solid $theme-color;
+  border-bottom: 1px solid $theme-color;
 }
 h2 {
-    font-size: 1.8em;
-    border-bottom: 1px solid #d0d0d0;
+  font-size: 1.8em;
+  border-bottom: 1px solid #d0d0d0;
 }
 .post-content h2 {
-    &:before { content:"⠁"; }
+  &:before {
+    content: "⠁";
+  }
 }
 h3 {
-    font-size: 1.6em;
-    font-style: italic;
+  font-size: 1.6em;
+  font-style: italic;
 }
 .post-content h3 {
-    &:before { content:"⠃"; }
+  &:before {
+    content: "⠃";
+  }
 }
 h4 {
-    font-size: 1.4em;
-    padding-left: 5px;
-    font-style: italic;
+  font-size: 1.4em;
+  padding-left: 5px;
+  font-style: italic;
 }
 .post-content h4 {
-    &:before { content:"⠋"; }
+  &:before {
+    content: "⠋";
+  }
 }
 h5 {
-    font-size: 1.2em;
-    padding-left: 10px;
-    font-style: italic;
+  font-size: 1.2em;
+  padding-left: 10px;
+  font-style: italic;
 }
 .post-content h5 {
-    &:before { content:"⠛"; }
+  &:before {
+    content: "⠛";
+  }
 }
 h6 {
-    font-size: 1.0em;
-    padding-left: 15px;
-    font-weight: bold;
-    font-style: italic;
+  font-size: 1em;
+  padding-left: 15px;
+  font-weight: bold;
+  font-style: italic;
 }
 .post-content h6 {
-    &:before { content:"⠟"; }
+  &:before {
+    content: "⠟";
+  }
 }
