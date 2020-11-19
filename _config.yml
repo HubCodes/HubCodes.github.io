@@ -36,9 +36,6 @@ collections:
         permalink: /:collection/:path/
 
 # Comment Service
-disqus:
-  id: johngrib
-  shortname: johngrib
 utterances:
   repo: HubCodes/hubcodes.github.io
   issue-term: pathname
