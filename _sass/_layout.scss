@@ -10,7 +10,6 @@
   body {
     width: 800px;
     margin: auto;
-    border: 1px solid #d0d0d0;
   }
 }
 
@@ -28,6 +27,7 @@ table.gsc-search-box {
 
 .header {
   background-color: #ffffffff;
+  color: $default-font-color;
   font-family: "Roboto Mono", "Courier New", Courier, monospace;
 
   &:after {
