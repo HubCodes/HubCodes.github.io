@@ -27,7 +27,6 @@ table.gsc-search-box {
 
 .header {
   background-color: #ffffffff;
-  color: $default-font-color;
   font-family: "Roboto Mono", "Courier New", Courier, monospace;
 
   &:after {
@@ -39,7 +38,7 @@ table.gsc-search-box {
   .site-title {
     float: left;
     text-decoration: none;
-    color: #ffffff;
+    color: $default-font-color;
     line-height: 4;
     padding-left: 10px;
     font-style: normal;
@@ -47,7 +46,7 @@ table.gsc-search-box {
   .site-title-right {
     float: right;
     text-decoration: none;
-    color: #ffffff;
+    color: $default-font-color;
     line-height: 4;
     padding-right: 10px;
     font-style: normal;
