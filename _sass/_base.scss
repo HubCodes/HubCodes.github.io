@@ -137,7 +137,7 @@ h2 {
 }
 h3 {
   font-size: 1.6em;
-  font-style: italic;
+  font-style: normal;
 }
 .post-content h3 {
   &:before {
@@ -147,7 +147,7 @@ h3 {
 h4 {
   font-size: 1.4em;
   padding-left: 5px;
-  font-style: italic;
+  font-style: normal;
 }
 .post-content h4 {
   &:before {
@@ -157,7 +157,7 @@ h4 {
 h5 {
   font-size: 1.2em;
   padding-left: 10px;
-  font-style: italic;
+  font-style: normal;
 }
 .post-content h5 {
   &:before {
@@ -168,7 +168,7 @@ h6 {
   font-size: 1em;
   padding-left: 15px;
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 .post-content h6 {
   &:before {
