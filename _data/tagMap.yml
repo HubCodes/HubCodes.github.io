@@ -5,4 +5,4 @@ latex:
 vimwiki:
     - {fileName: test}
 life:
-    - {fileName: '기억력의 한계'}
+    - {fileName: 기억력의_한계}

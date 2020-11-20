@@ -30,11 +30,11 @@ test:
     url: /wiki/test
     updated: '2020-11-20 21:03:07 +0900'
     children: []
-'기억력의 한계':
+기억력의_한계:
     type: wiki
     title: '기억력의 한계'
     summary: '흘려보내지 말자'
     parent: index
-    url: '/wiki/기억력의 한계'
+    url: /wiki/기억력의_한계
     updated: '2020-11-20 22:29:00 +0900'
     children: []

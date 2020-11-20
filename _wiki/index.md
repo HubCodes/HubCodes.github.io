@@ -11,7 +11,7 @@ regenerate: true
 
 * [[mathjax-latex]]
 * [[test]]
-* [[기억력의 한계]]
+* [[기억력의_한계]]
 
 ---
 
