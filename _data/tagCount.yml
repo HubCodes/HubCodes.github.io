@@ -4,3 +4,6 @@
 -
     name: latex
     size: 1
+-
+    name: vimwiki
+    size: 1

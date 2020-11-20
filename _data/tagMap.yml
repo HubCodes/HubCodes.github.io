@@ -2,3 +2,5 @@ how-to:
     - {fileName: how-to}
 latex:
     - {fileName: mathjax-latex}
+vimwiki:
+    - {fileName: test}
