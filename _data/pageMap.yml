@@ -24,9 +24,9 @@ mathjax-latex:
     children: []
 test:
     type: wiki
-    title: ""
-    summary: ""
-    parent: ""
+    title: 'Test article'
+    summary: 'Vimwiki 테스트'
+    parent: index
     url: /wiki/test
     updated: '2020-11-20 19:44:51 +0900'
     children: []
