@@ -4,3 +4,5 @@ latex:
     - {fileName: mathjax-latex}
 vimwiki:
     - {fileName: test}
+life:
+    - {fileName: '기억력의 한계'}
