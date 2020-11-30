@@ -9,8 +9,6 @@ regenerate: true
 
 ## wiki items
 
-* [[mathjax-latex]]
-* [[test]]
 * [[기억력의_한계]]
 * [[크로스_컴파일_환경_구축하기]]
 
