@@ -1,8 +1,7 @@
-how-to:
-    - {fileName: how-to}
-latex:
-    - {fileName: mathjax-latex}
-vimwiki:
-    - {fileName: test}
+coding:
+    - {fileName: Scala_Type_Lambda가_무엇일까}
+    - {fileName: Unicode}
 life:
     - {fileName: 기억력의_한계}
+linux:
+    - {fileName: 크로스_컴파일_환경_구축하기}

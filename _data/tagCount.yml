@@ -1,12 +1,9 @@
 -
-    name: how-to
-    size: 1
--
-    name: latex
-    size: 1
+    name: coding
+    size: 2
 -
     name: life
     size: 1
 -
-    name: vimwiki
+    name: linux
     size: 1
