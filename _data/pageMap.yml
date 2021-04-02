@@ -1,3 +1,11 @@
+Go_토막상식:
+    type: wiki
+    title: 'Go 토막상식'
+    summary: 'Go의 빌딩블럭 가지고 놀기'
+    parent: index
+    url: /wiki/Go_토막상식
+    updated: '2021-04-01 20:13:20 +0900'
+    children: []
 index:
     type: wiki
     title: wiki
@@ -9,7 +17,7 @@ index:
 Scala_Type_Lambda가_무엇일까:
     type: wiki
     title: 'Scala Type Lambda가 무엇일까'
-    summary: '문자 식별하기'
+    summary: Typelevel
     parent: index
     url: /wiki/Scala_Type_Lambda가_무엇일까
     updated: '2021-03-28 13:52:49 +0900'

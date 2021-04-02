@@ -1,7 +1,7 @@
 ---
 layout  : wiki
 title   : Scala Type Lambda가 무엇일까
-summary : 문자 식별하기
+summary : Typelevel
 date    : 2020-04-12 21:46:12 +0900
 updated : 2021-03-28 13:52:49 +0900
 tag     : coding
