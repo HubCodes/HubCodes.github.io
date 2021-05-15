@@ -22,6 +22,14 @@ Optional_Chaining과_await의_관계:
     url: /wiki/Optional_Chaining과_await의_관계
     updated: '2021-04-02 19:24:50 +0900'
     children: []
+Redis의_LRU_구현:
+    type: wiki
+    title: 'Redis의 LRU 구현'
+    summary: 'Approximated LRU'
+    parent: index
+    url: /wiki/Redis의_LRU_구현
+    updated: '2021-05-15 12:24:45 +0900'
+    children: []
 Scala_Type_Lambda가_무엇일까:
     type: wiki
     title: 'Scala Type Lambda가 무엇일까'

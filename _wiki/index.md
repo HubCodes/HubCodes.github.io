@@ -15,6 +15,7 @@ regenerate: true
 * [[Scala_Type_Lambda가_무엇일까]]
 * [[Go_토막상식]]
 * [[Optional_Chaining과_await의_관계]]
+* [[Redis의_LRU_구현]]
 
 ---
 
