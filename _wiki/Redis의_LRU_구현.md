@@ -37,7 +37,7 @@ LRU 알고리즘을 구현하려면 어떻게 해야 할까? 캐시로 사용할
 
 구체적으로 살펴보면 `redisObject` 안에 `lru` 라고 하는 24비트 크기의 필드를 두어 객체의 마지막 사용 시각을 초 단위 타임스탬프 값으로 담아둔다. 이렇게 하면 timestamp가 overflow 되기까지는 194일이 걸린다.
 
-```
+```c
 // In src/server.h:674
 
 typedef struct redisObject {
@@ -55,7 +55,7 @@ typedef struct redisObject {
 
 실제로 사용 시각을 갱신하는 쪽은 `lookupKey` 함수이다. `lookupKey` 함수는 이름에서 알 수 있듯 키를 조회할 때마다 호출되는 함수이다.
 
-```
+```c
 // In src/db.c:62
 
 /* Low level key lookup API, not actually called directly from commands
@@ -91,7 +91,7 @@ robj *lookupKey(redisDb *db, robj *key, int flags) {
 
 이 구현은 3.0 이후 바뀌었는데, 3.0 이후의 레디스는 `eviction pool` 이라고 부르는 작은 연결 리스트(“pool” of good candidates for eviction)를 가지고 있다. 이 리스트는 유휴 시간에 대해 단조증가하는 순서로 정렬되어 있는데, 리스트의 head는 가장 유휴 시간이 짧은 키를, last는 유휴 시간이 가장 긴 키를 나타낸다. 이 pool의 크기는 16으로 하드코딩되어 있다.
 
-```
+```c
 // In src/evict.c:53
 
 #define EVPOOL_SIZE 16
@@ -101,7 +101,7 @@ robj *lookupKey(redisDb *db, robj *key, int flags) {
 
 구체적인 구현은 `evict.c` 파일에 있는 `performEvictions` 함수에서 확인할 수 있는데, 흥미로운 부분 위주로 짚고 넘어가보자.
 
-```
+```c
 // In src/evict.c:538
 
 while (mem_freed < (long long)mem_tofree) {
@@ -109,7 +109,7 @@ while (mem_freed < (long long)mem_tofree) {
 
 "메모리에 여유가 생길 때 까지 이 동작을 반복" 에 해당하는 `while` 루프이다. `mem_freed` 변수는 루프를 수행함에 따라 갱신된다.
 
-```
+```c
 // In src/evict.c:547
 
 if (server.maxmemory_policy & (MAXMEMORY_FLAG_LRU|MAXMEMORY_FLAG_LFU) ||
@@ -119,7 +119,7 @@ if (server.maxmemory_policy & (MAXMEMORY_FLAG_LRU|MAXMEMORY_FLAG_LFU) ||
 
 LRU라면 이 조건문을 타게 된다.
 
-```
+```c
 // In src/evict.c:552
 
 while(bestkey == NULL) {
@@ -174,7 +174,7 @@ while(bestkey == NULL) {
 
 LRU 옵션을 확인하는 조건문을 빠져나오면 아래 조건문을 타게 된다. 방금 찾아낸 `bestkey` 가 있으면 실행되는 코드이다.
 
-```
+```c
 // In src/evict.c:622
 
 if (bestkey) {
